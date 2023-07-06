@@ -16,14 +16,14 @@ public class quiz2566 {
 
                 if(max < input[i][j]){
                     max = input[i][j];
-                    row = i+1; // 최댓값의 위치 기록 - 행 = i
-                    column = j+1; // 최댓값의 위치 기록 - 열 = j
+                    row = i; // 최댓값의 위치 기록 - 행 = i
+                    column = j; // 최댓값의 위치 기록 - 열 = j
                 }
             }
         }
 
         System.out.println(max);
-        System.out.println(row + " " + column);
+        System.out.println((row+1) + " " + (column+1));
 
         sc.close();
     }
